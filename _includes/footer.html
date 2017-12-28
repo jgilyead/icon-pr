@@ -1,0 +1,30 @@
+<footer class="site-footer">
+  <div class="grid grid--gutters grid--full large-grid--fit">
+
+    <div class="grid-cell">
+      <h2>Los Angeles office</h2>
+      <address class="vcard">
+        <p>
+          <span class="fn">Icon Public Relations</span><br>
+          <span class="street-address">750 N. San Vicente Blvd.<br>
+          Suite 800</span><br>
+          <span class="locality">West Hollywood</span>,
+          <abbr class="region" title="California">CA</abbr>
+          <span class="postal-code">90069</span>
+        </p>
+      </address>
+    </div>
+
+    <div class="grid-cell">
+      <h2>Join us online</h2>
+      <ul class="social-icons">
+        {% for account in site.social_accounts %}
+        <li>
+          <a href="https://www.{{ account.account }}.com/{{ account.username }}"><img src="assets/images/icons/{{ account.account }}.svg" alt="{{ account.account }}"></a>
+        </li>
+        {% endfor %}
+      </ul>
+    </div>
+
+  </div>
+</footer>

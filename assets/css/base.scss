@@ -1,0 +1,44 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 100%;
+}
+
+body {
+  background-color: $soft-grey;
+  color: $ink;
+  text-align: left;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.125em;
+  font-weight: 300;
+  line-height: 1.6;
+}
+
+p {
+  text-align: left;
+  margin: 1em 0;
+}
+
+a {
+  color: $brand-color;
+}
+
+h2 {
+  color: $brand-color;
+  font-size: 0.85em;
+  font-weight: 500;
+  letter-spacing: 0.25em;
+  padding: 0;
+  text-transform: uppercase;
+}
+
+abbr {
+  border-bottom: none !important;
+  text-decoration: none !important;
+}
+
+address {
+  font-style: normal !important;
+}

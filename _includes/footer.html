@@ -1,8 +1,7 @@
 <footer class="site-footer">
-  <div class="grid grid--gutters grid--full large-grid--fit">
 
-    <div class="grid-cell">
-      <h2>Los Angeles office</h2>
+    <div class="unit">
+      <h3>Los Angeles office</h3>
       <address class="vcard">
         <p>
           <span class="fn">Icon Public Relations</span><br>
@@ -15,16 +14,4 @@
       </address>
     </div>
 
-    <div class="grid-cell">
-      <h2>Join us online</h2>
-      <ul class="social-icons">
-        {% for account in site.social_accounts %}
-        <li>
-          <a href="https://www.{{ account.account }}.com/{{ account.username }}"><img src="assets/images/icons/{{ account.account }}.svg" alt="{{ account.account }}"></a>
-        </li>
-        {% endfor %}
-      </ul>
-    </div>
-
-  </div>
 </footer>

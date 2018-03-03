@@ -1,0 +1,18 @@
+---
+layout: default
+title: The team
+---
+
+<section>
+
+  <h1>The team</h1>
+
+  {% for member in site.collection-team %}
+  <div class="team-member">
+    <h2 class="team-member-name">{{ member.name }}</h2>
+    <p class="team-member-role">{{ member.role }}</p>
+    {{ member.content }}
+  </div>
+  {% endfor %}
+
+</section>

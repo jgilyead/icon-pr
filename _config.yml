@@ -19,17 +19,20 @@ description: >- # this means to ignore newlines until "baseurl:"
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 social_accounts:
+  - account: facebook
+    username: IconPR
   - account: twitter
     username: icon_pr
   - account: instagram
     username: icon_pr
-  - account: facebook
-    username: IconPR
 
 # Build settings
 markdown: kramdown
 sass:
   sass_dir: assets/css
+
+collections:
+  - collection-team
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list

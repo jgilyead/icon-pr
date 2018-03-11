@@ -9,10 +9,33 @@ title: The team
 
   {% for member in site.collection-team %}
   <div class="team-member">
+    <div class="accordion-header">
+      <div>
+        <h2 class="team-member-name">{{ member.name }}</h2>
+        <p class="team-member-role">{{ member.role }}</p>
+      </div>
+      <div>
+        <img class="icon-dropdown" src="/assets/images/icons/icon-dropdown.svg" alt="">
+      </div>
+    </div>
+    <div class="accordion-panel">
+    {{ member.content }}
+    </div>
+    {% endfor %}
+  </div>
+
+<!--
+
+  {% for member in site.collection-team %}
+  <div class="team-member">
     <h2 class="team-member-name">{{ member.name }}</h2>
     <p class="team-member-role">{{ member.role }}</p>
     {{ member.content }}
   </div>
   {% endfor %}
 
+-->
+
 </section>
+
+<script src="{{ "/assets/js/components.js" | prepend: site.baseurl }}"></script>

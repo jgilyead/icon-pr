@@ -74,3 +74,33 @@
   margin: 0 0 1em 0;
   text-transform: uppercase;
 }
+
+.accordion-header {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  transition: 0.4s;
+
+  &.active {
+
+    & img {
+      -webkit-transform: scaleY(-1);
+      transform: scaleY(-1);
+    }
+  }
+}
+
+.icon-dropdown {
+  @include border-radius(100%);
+  background-color: #fff;
+  height: 3rem;
+  padding: 0.5rem;
+  width: 3rem;
+}
+
+.accordion-panel {
+  display: none;
+  overflow: hidden;
+}

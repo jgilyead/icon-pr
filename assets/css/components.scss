@@ -1,7 +1,7 @@
 .container {
   margin: 0 auto;
   max-width: 48rem;
-  padding: 0 2rem;
+  padding: 0 1rem;
 }
 
 .logo {
@@ -19,13 +19,13 @@
 
 .site-footer {
   border-top: 1px solid $brand-color;
-  margin: 3rem 0;
+  margin: 2rem 0;
   padding: 2rem 0;
 }
 
 .social-icons {
-  margin-top: -1rem;
-  padding: 1rem 0;
+  margin-top: 0;
+  padding: 0;
 
   & li {
     display: inline-block;
@@ -42,7 +42,9 @@
 }
 
 .site-header {
-  margin: 4rem 0;
+  display: flex;
+  flex-flow: nowrap;
+  margin: 1rem 0;
 }
 
 .header-nav {
@@ -52,7 +54,7 @@
 .main-nav {
   letter-spacing: 0.05em;
   list-style-type: none;
-  margin: 2rem 0;
+  margin: 1rem 0;
   font-size: 0.85em;
   font-weight: bold;
 
@@ -61,17 +63,20 @@
   }
 }
 
+/* TEAM */
+
 .team-member-name {
-  margin-bottom: 0;
-  padding-bottom: 0;
+  margin: 0;
+  padding: 0;
 }
 
 .team-member-role {
   color: $brand-color;
   font-family: 'Raleway', sans-serif;
+  font-size: 0.85em;
   font-weight: 500;
   letter-spacing: 0.125em;
-  margin: 0 0 1em 0;
+  margin: 0.5em 0 0 0;
   text-transform: uppercase;
 }
 
@@ -80,8 +85,8 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin: 1.5rem 0;
   width: 100%;
-  transition: 0.4s;
 
   &.active {
 
@@ -103,4 +108,8 @@
 .accordion-panel {
   display: none;
   overflow: hidden;
+
+  & p:first-child {
+    margin-top: 0;
+  }
 }

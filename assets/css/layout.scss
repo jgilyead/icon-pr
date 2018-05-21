@@ -11,10 +11,8 @@
 .unit {
   flex: 0 1 100%;
   margin: 0.5rem 0;
-}
 
-@media (min-width: 48rem) {
-  .unit {
+  @media (min-width: 48rem) {
     flex: 0 1 calc(50% - 2rem);
     margin: 1rem 0;
   }

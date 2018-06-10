@@ -2,10 +2,6 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-
-  @media (min-width: 48rem) {
-    flex-wrap: nowrap;
-  }
 }
 
 .unit {
@@ -13,7 +9,7 @@
   margin: 0.5rem 0;
 
   @media (min-width: 48rem) {
-    flex: 0 1 calc(50% - 2rem);
+    flex: 0 1 calc(50% - 1rem);
     margin: 1rem 0;
   }
 }

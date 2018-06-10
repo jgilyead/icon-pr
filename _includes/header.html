@@ -2,7 +2,7 @@
   <div class="site-header flex-container">
 
     <div class="unit">
-      <a href="/"><img src="assets/images/icon-pr-logo.svg" alt="" class="logo"></a>
+      <a href="/"><img src="/assets/images/icon-pr-logo.svg" alt="" class="logo"></a>
     </div>
 
     <div class="unit header-nav">
@@ -10,13 +10,14 @@
       <ul class="social-icons">
         {% for account in site.social_accounts %}
         <li>
-          <a href="https://www.{{ account.account }}.com/{{ account.username }}"><img src="assets/images/icons/{{ account.account }}.svg" alt="{{ account.account }}"></a>
+          <a href="https://www.{{ account.account }}.com/{{ account.username }}"><img src="/assets/images/icons/{{ account.account }}.svg" alt="{{ account.account }}"></a>
         </li>
         {% endfor %}
       </ul>
 
       <ul class="main-nav">
-        <li><a href="/the-team.html">The team</a></li>
+        <li><a href="/team">The team</a></li>
+        <li><a href="/music">Music PR</a></li>
       </ul>
 
     </div>

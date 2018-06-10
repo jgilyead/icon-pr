@@ -16,3 +16,18 @@ for (i = 0; i < acc.length; i++) {
       }
   });
 }
+
+$(document).ready(function(){
+  $(".owl-carousel").owlCarousel({
+    margin: 16,
+    responsiveClass: true,
+    responsive:{
+      0:{
+        items:1
+      },
+      480:{
+        items:3
+      }
+    }
+  });
+});

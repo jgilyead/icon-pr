@@ -1,0 +1,26 @@
+---
+layout: default
+title: Press
+---
+
+<section>
+
+  <h1>Press</h1>
+
+  <section class="press">
+    <div class="flex-container">
+      <div class="owl-carousel owl-theme">
+        {% for article in site.data.press %}
+        <div class="carousel-item">
+          <img src="/assets/images/press/thumbnails/{{ article.file }}" allowfullscreen>
+          <div class="caption">
+            <p>{{ article.client }}, {{ article.publication }}</p>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+
+  </section>
+
+<script src="{{ "/assets/js/components.js" | prepend: site.baseurl }}"></script>

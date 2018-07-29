@@ -57,7 +57,11 @@
   .address {
     background-color: $white;
     line-height: 1.5;
-    padding: 2rem;
+    padding: 1.5rem;
+
+    @media (min-width: 56rem) {
+      padding: 2rem;
+    }
   }
 }
 

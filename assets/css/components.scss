@@ -11,10 +11,9 @@
 }
 
 .hero {
+  @include shadow();
 
   @media (min-width: 56rem) {
-
-    @include shadow();
     display: flex;
     width: calc(100% + 4rem);
     margin-left: -2rem;
@@ -28,7 +27,7 @@
     }
 
      img {
-       max-width: 100%;
+       width: 100%;
      }
   }
 

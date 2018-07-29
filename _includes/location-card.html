@@ -1,0 +1,18 @@
+{% for location in site.data.locations %}
+<div class="unit location-card">
+  <img src="/assets/images/{{ location.img-url }}.jpg" alt="Photo of {{ location.name }}" class="">
+  <div class="address">
+    <h3>{{ location.name }} office</h3>
+    <address class="vcard">
+      <p>
+        <span class="fn">{{ location.fn }}</span><br>
+        <span class="street-address">{{ location.street-address}}<br>
+        <span class="locality">{{ location.locality }}</span>,
+        <abbr class="region" title="{{ location.region-title }}">{{ location.region }}</abbr>
+        <span class="postal-code">{{ location.postal-code }}</span><br>
+        <span class="tel">{{ location.tel }}</span>
+      </p>
+    </address>
+  </div>
+</div>
+{% endfor %}

@@ -4,6 +4,57 @@
   padding: 0 1rem;
 }
 
+.hero {
+
+  @media (min-width: 56rem) {
+
+    @include shadow();
+    display: flex;
+    width: calc(100% + 4rem);
+    margin-left: -2rem;
+   }
+
+  &-image {
+    width: 100%;
+
+    @media (min-width: 56rem) {
+      width: 50%;
+    }
+
+     img {
+       max-width: 100%;
+     }
+  }
+
+  &-intro {
+    background-color: $white;
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    width: 100%;
+
+    @media (min-width: 56rem) {
+      padding: 3rem;
+      width: 50%;
+    }
+  }
+}
+
+.location-card {
+
+  line-height: 0;
+
+  img {
+    max-width: 100%;
+  }
+
+  .address {
+    background-color: $white;
+    line-height: 1.5;
+    padding: 2rem;
+  }
+}
+
 .logo {
   height: 8rem;
 
@@ -12,15 +63,9 @@
   }
 }
 
-.office {
-  background-color: $soft-grey;
-  padding: 2rem;
-}
-
 .site-footer {
-  border-top: 1px solid $brand-color;
-  margin: 2rem 0;
-  padding: 2rem 0;
+  margin: 1rem 0;
+  padding: 1rem 0;
 }
 
 .social-icons {
@@ -44,7 +89,7 @@
 .site-header {
   display: flex;
   flex-flow: nowrap;
-  margin: 1rem 0;
+  margin: 1rem 0 2rem 0;
 }
 
 .header-nav {
@@ -53,6 +98,7 @@
 
 .main-nav {
   letter-spacing: 0.05em;
+  line-height: $line-height;
   list-style-type: none;
   margin: 1rem 0;
   font-size: 0.85em;
@@ -95,7 +141,7 @@
 
 .icon-dropdown {
   @include border-radius(100%);
-  background-color: #fff;
+  background-color: $white;
   height: 3rem;
   padding: 0.5rem;
   width: 3rem;

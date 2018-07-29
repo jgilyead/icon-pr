@@ -1,0 +1,18 @@
+- name:           Los Angeles
+  fn:             Icon Public Relations
+  street-address: 8961 Sunset Blvd. Ste. 1C
+  locality:       West Hollywood
+  region:         CA
+  region-title:   California
+  postal-code:    90069
+  tel:            760-932-0390
+  img-url:        los-angeles
+
+- name:           NYC
+  fn:             Icon Public Relations
+  street-address: 310 E 46th Street
+  locality:       New York
+  region:         NY
+  region-title:   New York
+  postal-code:    10017
+  img-url:        new-york

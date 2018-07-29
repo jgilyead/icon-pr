@@ -1,0 +1,11 @@
+<div class="hero">
+  <div class="hero-image">
+    <img src="assets/images/hero/cameron-boyce.jpg" alt="">
+  </div>
+  <div class="hero-intro">
+    <div>
+      {% capture intro %}{% include intro.md %}{% endcapture %}
+      {{ intro | markdownify }}
+    </div>
+  </div>
+</div>

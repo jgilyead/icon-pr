@@ -6,7 +6,7 @@
 
 .container {
   margin: 0 auto;
-  max-width: 72rem;
+  max-width: 64rem;
   padding: 0 1rem;
 }
 
@@ -46,7 +46,6 @@
 }
 
 .location-card {
-
   line-height: 0;
 
   img {
@@ -66,6 +65,10 @@
 
 .logo {
   height: 8rem;
+
+  @media (min-width: 56rem) {
+    height: 10rem;
+  }
 }
 
 .site-footer {
@@ -109,6 +112,7 @@
   font-size: 0.85em;
   font-weight: $bold;
 }
+
 /* TEAM */
 
 .team-member-name {

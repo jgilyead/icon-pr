@@ -4,7 +4,7 @@
   locality:       West Hollywood
   region:         CA
   region-title:   California
-  postal-code:    90069
+  postal-code:    "90069"
   tel:            760-932-0390
   img-url:        los-angeles
 
@@ -14,5 +14,23 @@
   locality:       New York
   region:         NY
   region-title:   New York
-  postal-code:    10017
+  postal-code:    "10017"
   img-url:        new-york
+
+- name:           Nashville
+  fn:             Icon Public Relations
+  street-address: 4070 Wilson Pike
+  locality:       Nashville
+  region:         TN
+  region-title:   Tennessee
+  postal-code:    "37067"
+  img-url:        nashville
+
+- name:           Dallas
+  fn:             Icon Public Relations
+  street-address: "3824 Cedar Springs Rd #229"
+  locality:       Dallas
+  region:         TX
+  region-title:   Texas
+  postal-code:    "75219"
+  img-url:        dallas

@@ -7,7 +7,7 @@ title: Entertainment PR
 
   <h1>Entertainment PR</h1>
 
-  <section class="entertainment">
+  <div class="entertainment">
     <div class="flex-container">
     {% for video in site.data.videos.entertainment %}
       <div class="unit">
@@ -17,7 +17,8 @@ title: Entertainment PR
       </div>
     {% endfor %}
     </div>
+  </div>
 
-  </section>
+</section>
 
 <script src="{{ "/assets/js/components.js" | prepend: site.baseurl }}"></script>

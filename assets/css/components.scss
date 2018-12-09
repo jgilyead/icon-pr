@@ -12,6 +12,7 @@
 
 .hero {
   @include shadow();
+  margin: 2rem 0;
 
   @media (min-width: 56rem) {
     display: flex;
@@ -94,7 +95,7 @@
 }
 
 .site-footer {
-  margin: 4rem 0;
+  margin: 3rem 0;
   padding: 1rem 0;
 }
 
@@ -199,5 +200,18 @@
     left: 0;
     width: 100%;
     height: 100%;
+  }
+}
+
+.meta-press-gallery {
+  display: flex;
+  margin: 0 -1rem;
+
+  .meta-press-gallery-item {
+    margin: 0 1rem;
+
+    img {
+      max-width: 100%;
+    }
   }
 }

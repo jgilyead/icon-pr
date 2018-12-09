@@ -1,0 +1,18 @@
+<section class="meta-press">
+
+  <h1>In the press</h1>
+
+    <div class="meta-press-gallery">
+      {% for article in site.data.press-meta %}
+      <a href="{{ article.url }}">
+        <div class="meta-press-gallery-item">
+          <img src="/assets/images/press/meta/{{ article.file }}" allowfullscreen>
+          <div class="caption">
+            <p>{{ article.publication }}</p>
+          </div>
+        </div>
+      </a>
+      {% endfor %}
+    </div>
+
+</section>

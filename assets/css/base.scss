@@ -63,6 +63,10 @@ h3 {
   text-transform: uppercase;
 }
 
+hr {
+  opacity: 0.25;
+}
+
 abbr {
   border-bottom: none !important;
   text-decoration: none !important;
@@ -74,4 +78,8 @@ address {
 
 .narrow {
   @include narrow();
+}
+
+section {
+  padding: 2rem 0;
 }

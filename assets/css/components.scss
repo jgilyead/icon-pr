@@ -204,14 +204,18 @@
 }
 
 .meta-press-gallery {
-  display: flex;
-  margin: 0 -1rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1rem;
+
+  @media (min-width: 32rem) {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
 
   .meta-press-gallery-item {
-    margin: 0 1rem;
 
     img {
-      max-width: 100%;
+      width: 100%;
     }
   }
 }

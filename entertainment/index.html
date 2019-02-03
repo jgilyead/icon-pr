@@ -4,16 +4,10 @@ title: Entertainment PR
 shortname: entertainment
 ---
 
-<section>
+{% include page-header.html %}
 
-  {% include page-header.html %}
-
-  <div class="flex-container">
-  {% for video in site.data.videos.entertainment %}
-  {% include video-embed.html %}
-  {% endfor %}
-  </div>
-
-</section>
-
-<script src="{{ "/assets/js/components.js" | prepend: site.baseurl }}"></script>
+<div class="flex-container">
+{% for video in site.data.videos.entertainment %}
+{% include video-embed.html %}
+{% endfor %}
+</div>

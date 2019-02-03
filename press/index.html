@@ -1,27 +1,20 @@
 ---
 layout: default
 title: Press
+shortname: press
 ---
 
-<section>
+{% include page-header.html %}
 
-  <h1>{{ page.title }}</h1>
-
-  <div class="press">
-    <div class="flex-container">
-      <div class="owl-carousel owl-theme">
-        {% for article in site.data.press %}
-        <div class="carousel-item">
-          <img src="/assets/images/press/thumbnails/{{ article.file }}" allowfullscreen>
-          <div class="caption">
-            <p>{{ article.client }}, {{ article.publication }}</p>
-          </div>
-        </div>
-        {% endfor %}
+<div class="flex-container">
+  <div class="owl-carousel owl-theme">
+    {% for article in site.data.press %}
+    <div class="carousel-item">
+      <img src="/assets/images/press/thumbnails/{{ article.file }}" allowfullscreen>
+      <div class="caption">
+        <p>{{ article.client }}, {{ article.publication }}</p>
       </div>
     </div>
-
+    {% endfor %}
   </div>
-</section>
-
-<script src="{{ "/assets/js/components.js" | prepend: site.baseurl }}"></script>
+</div>

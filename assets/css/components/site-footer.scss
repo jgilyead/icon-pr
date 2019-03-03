@@ -1,0 +1,5 @@
+.site-footer {
+  @include halves();
+  margin: 3rem 0;
+  padding: 1rem 0;
+}

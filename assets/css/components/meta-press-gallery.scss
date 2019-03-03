@@ -1,0 +1,10 @@
+.meta-press-gallery {
+  @include quarters();
+
+  &-item {
+
+    img {
+      width: 100%;
+    }
+  }
+}

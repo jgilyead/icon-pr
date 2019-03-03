@@ -1,7 +1,9 @@
 <hr>
-<footer class="site-footer locations-container">
+<footer class="site-footer">
 
-{% include location-card.html %}
+  {% for location in site.data.locations %}
+  {% include location-card.html %}
+  {% endfor %}
 
 </footer>
 

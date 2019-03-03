@@ -1,27 +1,22 @@
 ---
 layout: default
 title: The team
+shortname: team
 ---
 
-<div class="narrow">
-
-  <h1>The team</h1>
+  <h1>{{ page.title }}</h1>
 
   {% for member in site.collection-team %}
-  <div class="team-member">
-    <div class="accordion-header">
-      <div>
-        <h2 class="team-member-name">{{ member.name }}</h2>
-        <p class="team-member-role">{{ member.role }}</p>
-      </div>
-      <div>
-        <img class="icon-dropdown" src="/assets/images/icons/icon-dropdown.svg" alt="">
-      </div>
+  <div class="accordion-header">
+    <div>
+      <h2 class="accordion-card-title">{{ member.name }}</h2>
+      <p class="accordion-card-subtitle">{{ member.role }}</p>
     </div>
-    <div class="accordion-panel">
-    {{ member.content }}
+    <div>
+      <img class="icon-dropdown" src="/assets/images/icons/icon-dropdown.svg" alt="">
     </div>
-    {% endfor %}
   </div>
-
-</div>
+  <div class="accordion-panel">
+  {{ member.content }}
+  </div>
+  {% endfor %}

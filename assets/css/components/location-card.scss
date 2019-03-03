@@ -1,0 +1,28 @@
+.location-card {
+  display: grid;
+  font-size: 0.85rem;
+  line-height: 0;
+
+  @media (min-width: 48rem) {
+    grid-template-columns: 1fr 2fr;
+  }
+
+  & img {
+    object-fit: cover;
+    max-width: 100%;
+
+    @media (min-width: 48rem) {
+      max-width: 200%;
+    }
+  }
+
+  & .address {
+    background-color: $white;
+    line-height: 1.5;
+    padding: 1.5rem;
+
+    & p {
+      margin: 0;
+    }
+  }
+}

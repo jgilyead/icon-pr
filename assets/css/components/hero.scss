@@ -1,0 +1,35 @@
+.hero {
+  @include shadow();
+  margin: 2rem 0;
+
+  @media (min-width: 56rem) {
+    display: flex;
+    width: calc(100% + 4rem);
+    margin-left: -2rem;
+   }
+
+  &-image {
+    width: 100%;
+
+    @media (min-width: 56rem) {
+      width: 50%;
+    }
+
+     img {
+       width: 100%;
+     }
+  }
+
+  &-intro {
+    background-color: $white;
+    display: flex;
+    align-items: center;
+    padding: 1.5rem;
+    width: 100%;
+
+    @media (min-width: 56rem) {
+      padding: 3rem;
+      width: 50%;
+    }
+  }
+}

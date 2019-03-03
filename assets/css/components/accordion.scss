@@ -1,0 +1,47 @@
+.accordion-header {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 1.5rem 0;
+  width: 100%;
+
+  &.active {
+
+    & img {
+      -webkit-transform: scaleY(-1);
+      transform: scaleY(-1);
+    }
+  }
+}
+
+.icon-dropdown {
+  @include border-radius(100%);
+  background-color: $white;
+  height: 3rem;
+  padding: 0.5rem;
+  width: 3rem;
+}
+
+.accordion-panel {
+  display: none;
+  overflow: hidden;
+
+  & p:first-child {
+    margin-top: 0;
+  }
+}
+
+.accordion-card-title {
+  margin: 0;
+  padding: 0;
+}
+
+.accordion-card-subtitle {
+  color: $brand-color;
+  font-size: 0.85em;
+  font-weight: $bold;
+  letter-spacing: 0.125em;
+  margin: 0.5em 0 0 0;
+  text-transform: uppercase;
+}

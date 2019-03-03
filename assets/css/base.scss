@@ -76,10 +76,12 @@ address {
   font-style: normal !important;
 }
 
-.narrow {
-  @include narrow();
-}
-
 section {
   padding: 2rem 0;
+}
+
+.caption {
+  & p {
+    padding-top: 1rem;
+  }
 }

@@ -38,6 +38,14 @@
   }
 }
 
+@mixin thirds() {
+  @include grid(2rem);
+
+  @media (min-width: 48rem) {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
 @mixin quarters() {
   @include grid(2rem);
 

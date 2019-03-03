@@ -1,5 +1,5 @@
 .meta-press-gallery {
-  @include cols(2, 3);
+  @include cols(2, 5);
   @include small-text();
 
   &-item {

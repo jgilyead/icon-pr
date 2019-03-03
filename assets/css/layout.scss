@@ -24,32 +24,12 @@
 
 // Grid //
 
-@mixin grid($gap){
+@mixin cols($min-cols, $max-cols){
   display: grid;
-  grid-template-columns: 1fr;
-  grid-gap: $gap;
-}
-
-@mixin halves() {
-  @include grid(2rem);
+  grid-template-columns: repeat($min-cols, 1fr);
+  grid-gap: 2rem;
 
   @media (min-width: 48rem) {
-    grid-template-columns: 1fr 1fr;
-  }
-}
-
-@mixin thirds() {
-  @include grid(2rem);
-
-  @media (min-width: 48rem) {
-    grid-template-columns: 1fr 1fr 1fr;
-  }
-}
-
-@mixin quarters() {
-  @include grid(2rem);
-
-  @media (min-width: 48rem) {
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat($max-cols, 1fr);
   }
 }

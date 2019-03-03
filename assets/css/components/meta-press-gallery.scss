@@ -1,5 +1,6 @@
 .meta-press-gallery {
-  @include thirds();
+  @include cols(2, 3);
+  @include small-text();
 
   &-item {
 

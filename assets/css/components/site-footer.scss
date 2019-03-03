@@ -1,5 +1,5 @@
 .site-footer {
-  @include halves();
+  @include cols(1, 2);
   margin: 3rem 0;
   padding: 1rem 0;
 }

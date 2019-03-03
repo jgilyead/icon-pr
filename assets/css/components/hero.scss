@@ -1,6 +1,6 @@
 .hero {
   @include shadow();
-  margin: 2rem 0;
+  margin: 1rem 0;
 
   @media (min-width: 56rem) {
     display: flex;

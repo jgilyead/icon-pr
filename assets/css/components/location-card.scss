@@ -1,7 +1,6 @@
 .location-card {
+  @include small-text();
   display: grid;
-  font-size: 0.85rem;
-  line-height: 0;
 
   @media (min-width: 48rem) {
     grid-template-columns: 1fr 2fr;

@@ -1,0 +1,10 @@
+  <hr>
+  <section class="partners">
+
+  <h1>Our partners</h1>
+
+  {% for partner in site.data.partners %}
+    <a href="{{ partner.url }}"><img src="/assets/images/partners/{{ partner.image }}"></a>
+  {% endfor %}
+
+</section>

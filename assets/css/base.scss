@@ -85,3 +85,7 @@ section {
     padding-top: 1rem;
   }
 }
+
+@mixin small-text() {
+  font-size: 0.85em;
+}

@@ -30,6 +30,10 @@
   & p:first-child {
     margin-top: 0;
   }
+
+  @media (min-width: 48rem) {
+    width: 90%;
+  }
 }
 
 .accordion-card-title {

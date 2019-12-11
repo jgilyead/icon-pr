@@ -10,17 +10,9 @@
   client:       Annika Marks
   publication:  Her Campus
 
-- file:         2018-06-20-jenn-lyon-cvlux.jpg
-  client:       Jenn Lyon
-  publication:  CVLUX
-
 - file:         2018-06-06-sophie-simmons-vanity-fair-italia.jpg
   client:       Sophie Simmons
   publication:  Vanity Fair Italia
-
-- file:         2018-05-02-nathaniel-potvin-candid.jpg
-  client:       Nathaniel Potvin
-  publication:  Candid
 
 - file:         2018-05-04-yellow-claw-billboard.jpg
   client:       Yellow Claw
@@ -48,7 +40,7 @@
 
 - file:         2018-04-12-sophie-simmons-harpers-bazaar.jpg
   client:       Sophie Simmons
-  publication:  Bazaar
+  publication:  Harper's Bazaar
 
 - file:         2018-04-03-cameron-boyce-hero-magazine.jpg
   client:       Cameron Boyce
@@ -58,17 +50,9 @@
   client:       Clark Moore
   publication:  i-D
 
-- file:         2018-04-01-liv-keegan-avante-magazine.jpg
-  client:       Liv Keegan
-  publication:  Avante
-
 - file:         2018-03-19-clark-moore-teen-vogue.jpg
   client:       Clark Moore
   publication:  Teen Vogue
-
-- file:         2018-03-01-cameron-boyce-luca-magazine.jpg
-  client:       Cameron Boyce
-  publication:  Luca
 
 - file:         2018-02-01-cameron-boyce-candid-16.jpg
   client:       Cameron Boyce
@@ -77,10 +61,6 @@
 - file:         2018-01-23-cameron-boyce-tmrw-magazine.jpg
   client:       Cameron Boyce
   publication:  TMRW
-
-- file:         2018-01-01-rydel-lynch-luca.jpg
-  client:       Rydel Lynch
-  publication:  Luca
 
 - file:         2017-11-02-liane-v-flaunt.jpg
   client:       Liane V

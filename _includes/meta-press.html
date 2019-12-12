@@ -5,11 +5,9 @@
     <div class="meta-press-gallery">
       {% for article in site.data.press-meta %}
       <a href="{{ article.url }}">
-        <div class="meta-press-gallery-item">
-          <img src="/assets/images/press/meta/{{ article.file }}" allowfullscreen>
-          <div class="caption">
-            <p>{{ article.publication }}</p>
-          </div>
+        <div class="meta-press-gallery-item" style="background-image: url('/assets/images/press/meta/{{ article.file }}');">
+          <!-- <img class="faded" src="/assets/images/press/meta/{{ article.file }}" alt="{{ article.publication }}" allowfullscreen>-->
+          <img class="publisher-logo" src="/assets/images/press/meta/{{ article.logo }}" alt="">
         </div>
       </a>
       {% endfor %}

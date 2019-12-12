@@ -1,19 +1,34 @@
-- file:         2019-01-28-heather-besignano-culture-hype.jpg
+- file:         culture-hype.png
+  logo:         logo-culture-hype.png
   publication:  Culture Hype
   url:          http://www.culture-hype.com/all-blog-posts/2019/1/28/musicmonday-feat-heather-besignano-of-icon-pr
 
-- file:         2018-11-19-voyage-la-heather-weiss.jpg
+- file:         voyage-la.png
+  logo:         logo-voyage-la.png
   publication:  VoyageLA
   url:          http://voyagela.com/interview/meet-heather-besignano-icon-pr-west-hollywood/
 
-- file:         2018-09-10-hollywood-reporter-heather-weiss.jpg
+- file:         hollywood-reporter.png
+  logo:         logo-hollywood-reporter.svg
   publication:  Hollywood Reporter
   url:          https://www.instagram.com/p/BnjsUajHCG7/?utm_source=ig_web_button_share_sheet
 
-- file:         2018-01-05-deadline-hollywood-heather-weiss.jpg
+- file:         deadline.png
+  logo:         logo-deadline.svg
   publication:  Deadline Hollywood
   url:          https://deadline.com/2018/01/icon-pr-launches-heather-besignano-hollywood-agency-1202235729/
 
-- file:         2017-02-16-brides-heather-weiss.jpg
+- file:         brides.png
+  logo:         logo-brides.svg
   publication:  Brides
   url:          https://www.brides.com/story/fall-outdoor-california-wedding-ideas-jessica-castro-weddings
+
+- file:         hollywood-reporter-2.png
+  logo:         logo-hollywood-reporter.svg
+  publication:  Hollywood Reporter
+  url:          https://www.hollywoodreporter.com/live-feed/big-bang-theory-mayim-bialik-emmy-diary-373420
+
+- file:         glamour.png
+  logo:         logo-glamour.svg
+  publication:  Brides
+  url:          https://www.glamour.com/story/mayim-bialik-reveals-new-detai

@@ -57,3 +57,34 @@
 h1 {  @extend .f4;  }
 h2 {  @extend .f3;  }
 h3 {  @extend .f1;  }
+
+h1, h2, h3 {
+  line-height: 1.15;
+  margin: 0 0 1em 0;
+}
+
+h1 {
+  color: $ink;
+  font-weight: $regular;
+  padding: 0;
+}
+
+h2 {
+  color: $brand-color;
+  font-weight: $regular;
+  padding: 0;
+}
+
+h3 {
+  color: $brand-color;
+  font-weight: $bold;
+  letter-spacing: 0.1em;
+  padding: 0;
+  text-transform: uppercase;
+}
+
+p {
+  text-align: left;
+  line-height: $line-height;
+  margin: 0 0 1em 0;
+}

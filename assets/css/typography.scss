@@ -1,0 +1,59 @@
+:root {
+  --fluid-min-width: 320;
+  --fluid-max-width: 1024;
+  --fluid-min-size: 18;
+  --fluid-max-size: 18;
+  --fluid-min-ratio: 1.2;
+  --fluid-max-ratio: 1.333;
+}
+
+/* ------------------------------------ */
+
+.f1 { font-size: var(--fluid-1) }
+.f2 { font-size: var(--fluid-2) }
+.f3 { font-size: var(--fluid-3) }
+.f4 { font-size: var(--fluid-4) }
+
+/* ------------------------------------ */
+
+:root {
+  --fluid-min-scale-1: var(--fluid-min-ratio);
+  --fluid-min-scale-2: var(--fluid-min-ratio);
+  --fluid-min-scale-3: var(--fluid-min-scale-1) * var(--fluid-min-ratio);
+  --fluid-min-scale-4: var(--fluid-min-scale-2) * var(--fluid-min-ratio);
+
+  --fluid-min-size-1: (var(--fluid-min-size)) / 16;
+  --fluid-min-size-2: (var(--fluid-min-size) * var(--fluid-min-scale-1)) / 16;
+  --fluid-min-size-3: (var(--fluid-min-size) * var(--fluid-min-scale-2)) / 16;
+  --fluid-min-size-4: (var(--fluid-min-size) * var(--fluid-min-scale-3)) / 16;
+
+  --fluid-max-scale-1: var(--fluid-max-ratio);
+  --fluid-max-scale-2: var(--fluid-max-ratio);
+  --fluid-max-scale-3: var(--fluid-max-scale-2) * var(--fluid-max-ratio);
+  --fluid-max-scale-4: var(--fluid-max-scale-3) * var(--fluid-max-ratio);
+
+  --fluid-max-size-1: (var(--fluid-max-size)) / 16;
+  --fluid-max-size-2: (var(--fluid-max-size) * var(--fluid-max-scale-2)) / 16;
+  --fluid-max-size-3: (var(--fluid-max-size) * var(--fluid-max-scale-3)) / 16;
+  --fluid-max-size-4: (var(--fluid-max-size) * var(--fluid-max-scale-4)) / 16;
+
+  --fluid-bp: calc((100vw - ((var(--fluid-min-width) / 16) * 1rem)) / ((var(--fluid-max-width) / 16) - (var(--fluid-min-width) / 16)));
+
+  --fluid-1: calc(calc((var(--fluid-min-size-1) * 1rem) + (var(--fluid-max-size-1) - var(--fluid-min-size-1)) * var(--fluid-bp)));
+  --fluid-2: calc(calc((var(--fluid-min-size-2) * 1rem) + (var(--fluid-max-size-2) - var(--fluid-min-size-2)) * var(--fluid-bp)));
+  --fluid-3: calc(calc((var(--fluid-min-size-3) * 1rem) + (var(--fluid-max-size-3) - var(--fluid-min-size-3)) * var(--fluid-bp)));
+  --fluid-4: calc(calc((var(--fluid-min-size-4) * 1rem) + (var(--fluid-max-size-4) - var(--fluid-min-size-4)) * var(--fluid-bp)));
+}
+
+@media screen and (min-width: 1024px) {
+  :root {
+    --fluid-1: calc(var(--fluid-max-size-1) * 1rem);
+    --fluid-2: calc(var(--fluid-max-size-2) * 1rem);
+    --fluid-3: calc(var(--fluid-max-size-3) * 1rem);
+    --fluid-4: calc(var(--fluid-max-size-4) * 1rem);
+  }
+}
+
+h1 {  @extend .f4;  }
+h2 {  @extend .f3;  }
+h3 {  @extend .f1;  }

@@ -1,5 +1,5 @@
 .hero {
-  @include shadow();
+  //@include shadow();
   margin: 1rem 0;
 
   @media (min-width: 56rem) {

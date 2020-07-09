@@ -1,7 +1,7 @@
 <ul class="social-icons">
   {% for account in site.social_accounts %}
   <li>
-    <a href="https://www.{{ account.account }}.com/{{ account.username }}"><img src="/assets/images/icons/{{ account.account }}.svg" alt="{{ account.account }}"></a>
+    <a href="https://www.{{ account.account }}.com/{{ account.url }}"><img src="/assets/images/icons/{{ account.account }}.svg" alt="{{ account.account }}"></a>
   </li>
   {% endfor %}
 </ul>

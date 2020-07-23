@@ -20,13 +20,13 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 social_accounts:
   - account: facebook
-    url: IconPR
+    url: facebook.com/IconPR
   - account: twitter
-    url: icon_pr
+    url: twitter.com/icon_pr
   - account: instagram
-    url: icon_pr
+    url: instagram.com/icon_pr
   - account: tumblr
-    url: blog/iconpr
+    url: iconpr.tumblr.com
 
 # Build settings
 markdown: kramdown

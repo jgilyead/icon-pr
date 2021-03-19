@@ -3,7 +3,7 @@
   @include small-text();
 
   &-item {
-    align-items: center;
+    align-items: flex-end;
     background-color: $ink;
     background-size: cover;
     display: flex;

@@ -1,6 +1,6 @@
 ---
 name: Gayle Davidson
-role: Publicist
+role: Publicist, Nashville Office
 ---
 
 No matter where she is or who she’s with, Gayle Davidson has a connection. From a tiny fishing village in Indonesia, to a majestic homestead in Australia, to the suburbs of London, to the hipster corners of Brooklyn, to the veneers of Hollywood… Gayle knows-a-guy.

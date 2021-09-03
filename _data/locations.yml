@@ -9,11 +9,11 @@
 
 - name:           NYC
   fn:             Icon Public Relations
-  street-address: 310 E 46th Street
+  street-address: 313 W 29th Street
   locality:       New York
   region:         NY
   region-title:   New York
-  postal-code:    "10017"
+  postal-code:    "10001"
   img-url:        new-york
 
 - name:           Nashville

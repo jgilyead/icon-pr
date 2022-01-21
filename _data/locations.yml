@@ -33,3 +33,12 @@
   region-title:   Texas
   postal-code:    "75226"
   img-url:        dallas
+
+- name:           London
+  fn:             Icon Public Relations
+  street-address: "Buchanan Gardens"
+  locality:       London
+  region:         United Kingdom,
+  region-title:   United Kingdom
+  postal-code:    "NW10 5AD"
+  img-url:        london

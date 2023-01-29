@@ -1,9 +1,13 @@
 <hr>
 <footer class="site-footer">
 
+  <h2>Our office locations</h2>
+
+  <span class="locations">
   {% for location in site.data.locations %}
   {% include location-card.html %}
   {% endfor %}
+  </span>
 
 </footer>
 

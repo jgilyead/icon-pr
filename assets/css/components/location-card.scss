@@ -1,24 +1,20 @@
 .location-card {
   @include small-text();
-  display: grid;
-
-  @media (min-width: 48rem) {
-    grid-template-columns: 1fr 2fr;
-  }
+  align-items: center;
+  display: flex;
+  flex-flow: column wrap;
+  gap: 1em;
 
   & img {
+    border-radius: 112px;
     object-fit: cover;
-    max-width: 100%;
-
-    @media (min-width: 48rem) {
-      max-width: 200%;
-    }
+    height: 112px;
+    width: 112px;
   }
 
   & .address {
-    background-color: $white;
     line-height: 1.5;
-    padding: 1.5rem;
+    text-align: center;
 
     & p {
       margin: 0;
